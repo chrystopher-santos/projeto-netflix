@@ -34,9 +34,9 @@ const Login = () => {
                     </div>
                     <p className='py-8'>
                         <span className='text-gray-600'>
-                            Já é inscrito no Cineflix? 
+                          Novo no Cineflix? 
                         </span>{' '}
-                        <Link to='/login'> Entrar</Link>
+                        <Link to='/signup'> Cadastrar-se</Link>
                     </p>
                 </form>
                 </div>
