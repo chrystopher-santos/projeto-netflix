@@ -63,7 +63,7 @@ const Signup = () => {
                   <span className='text-gray-600'>
                     Já é inscrito no Cineflix?
                   </span>{' '}
-                  <Link to='/login'>Sign In</Link>
+                  <Link to='/login'>Entrar</Link>
                 </p>
               </form>
             </div>

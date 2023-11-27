@@ -25,20 +25,19 @@ const Navbar = () => {
         </Link>
        {user?.email ? (  <div>
           <Link to='/account'>
-            <button className='text-white pr-4'>
-              Conta
-            </button>
+            <button className='text-white pr-4'> Conta  </button>
           </Link>
-            <button className='bg-red-600 px-6 py-2 rounded cursor-pointer text-white'>
+            <button 
+              onClick={handleLogout}
+              className='bg-red-600 px-6 py-2 rounded cursor-pointer text-white'
+            >
               Sair
             </button>
         </div> 
        ) : ( 
          <div>
          <Link to='/login'>
-           <button className='text-white pr-4'>
-             Entrar
-           </button>
+           <button className='text-white pr-4'> Entrar </button>
          </Link>
          <Link to='/signup'>
            <button className='bg-red-600 px-6 py-2 rounded cursor-pointer text-white'>
