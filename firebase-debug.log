@@ -1,0 +1,49 @@
+[debug] [2023-11-26T19:06:46.320Z] ----------------------------------------------------------------------
+[debug] [2023-11-26T19:06:46.323Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2023-11-26T19:06:46.323Z] CLI Version:   12.9.1
+[debug] [2023-11-26T19:06:46.324Z] Platform:      darwin
+[debug] [2023-11-26T19:06:46.324Z] Node Version:  v16.15.1
+[debug] [2023-11-26T19:06:46.326Z] Time:          Sun Nov 26 2023 16:06:46 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2023-11-26T19:06:46.327Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-26T19:06:46.464Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-26T19:06:46.464Z] > authorizing via signed-in user (chrystopherm.santos@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2023-11-26T19:06:46.906Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] ⚠  hosting: Hosting Emulator unable to start on port 5000, starting on 5002 instead. {"metadata":{"emulator":{"name":"hosting"},"message":"Hosting Emulator unable to start on port 5000, starting on 5002 instead."}}
+[debug] [2023-11-26T19:06:46.907Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-11-26T19:06:46.907Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-11-26T19:06:46.934Z] [hub] writing locator at /var/folders/8s/xsr3r4992s1_wyctzpxlk0sc0000gn/T/hub-cineflix-2d6c7.json
+[debug] [2023-11-26T19:06:46.959Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cineflix-2d6c7/sites 
+[debug] [2023-11-26T19:06:48.121Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cineflix-2d6c7/sites 200
+[debug] [2023-11-26T19:06:48.121Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cineflix-2d6c7/sites {"sites":[{"name":"projects/cineflix-2d6c7/sites/cineflix-2d6c7","defaultUrl":"https://cineflix-2d6c7.web.app","appId":"1:288029227867:web:b2ff6471dbea482750f87e","type":"DEFAULT_SITE"}]}
+[debug] [2023-11-26T19:06:48.122Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cineflix-2d6c7/webApps/1:288029227867:web:b2ff6471dbea482750f87e/config [none]
+[debug] [2023-11-26T19:06:48.939Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cineflix-2d6c7/webApps/1:288029227867:web:b2ff6471dbea482750f87e/config 200
+[debug] [2023-11-26T19:06:48.940Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cineflix-2d6c7/webApps/1:288029227867:web:b2ff6471dbea482750f87e/config {"projectId":"cineflix-2d6c7","appId":"1:288029227867:web:b2ff6471dbea482750f87e","storageBucket":"cineflix-2d6c7.appspot.com","apiKey":"AIzaSyBJIX-6346wgz_fPZjUjoah3XIzGhO8awE","authDomain":"cineflix-2d6c7.firebaseapp.com","messagingSenderId":"288029227867","measurementId":"G-4PBSQKYKNH"}
+[debug] [2023-11-26T19:06:48.967Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cineflix-2d6c7 [none]
+[debug] [2023-11-26T19:06:49.388Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cineflix-2d6c7 200
+[debug] [2023-11-26T19:06:49.389Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cineflix-2d6c7 {"projectId":"cineflix-2d6c7","projectNumber":"288029227867","displayName":"cineflix","name":"projects/cineflix-2d6c7","resources":{"hostingSite":"cineflix-2d6c7"},"state":"ACTIVE","etag":"1_fbe49c76-c6a4-4633-a73d-d7aadd451d07"}
+[info] i  hosting[cineflix-2d6c7]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[cineflix-2d6c7]: Local server: http://127.0.0.1:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5002\u001b[22m\u001b[24m"}}
+[warn] ⚠  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5002 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [26/Nov/2023:19:07:03 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Nov/2023:19:07:03 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Nov/2023:19:07:04 +0000] "GET /%PUBLIC_URL%/manifest.json HTTP/1.1" 500 - "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Nov/2023:19:07:04 +0000] \"GET /%PUBLIC_URL%/manifest.json HTTP/1.1\" 500 - \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Nov/2023:19:07:04 +0000] "GET /%PUBLIC_URL%/favicon.ico HTTP/1.1" 500 - "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Nov/2023:19:07:04 +0000] \"GET /%PUBLIC_URL%/favicon.ico HTTP/1.1\" 500 - \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Nov/2023:19:07:13 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Nov/2023:19:07:13 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Nov/2023:19:07:13 +0000] "GET /%PUBLIC_URL%/favicon.ico HTTP/1.1" 500 - "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Nov/2023:19:07:13 +0000] \"GET /%PUBLIC_URL%/favicon.ico HTTP/1.1\" 500 - \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Nov/2023:19:07:13 +0000] "GET /%PUBLIC_URL%/manifest.json HTTP/1.1" 500 - "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Nov/2023:19:07:13 +0000] \"GET /%PUBLIC_URL%/manifest.json HTTP/1.1\" 500 - \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\""}}
