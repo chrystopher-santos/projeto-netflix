@@ -24,10 +24,11 @@ const Navbar = () => {
         </h1>
         </Link>
        {user?.email ? (  <div>
-          <Link to='/account'>
+          <Link to='/account' id='account'>
             <button className='text-white pr-4'> Conta  </button>
           </Link>
             <button 
+              id='signout'
               onClick={handleLogout}
               className='bg-red-600 px-6 py-2 rounded cursor-pointer text-white'
             >
@@ -36,10 +37,10 @@ const Navbar = () => {
         </div> 
        ) : ( 
          <div>
-         <Link to='/login'>
+         <Link to='/login' id='login'>
            <button className='text-white pr-4'> Entrar </button>
          </Link>
-         <Link to='/signup'>
+         <Link to='/signup' id='signup'>
            <button className='bg-red-600 px-6 py-2 rounded cursor-pointer text-white'>
              Inscreva-se
            </button>

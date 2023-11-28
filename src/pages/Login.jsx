@@ -41,6 +41,7 @@ const Login = () => {
                     type="email" 
                     placeholder='Email'
                     autoComplete='email'
+                    id='email'
                     />
                     
                     <input 
@@ -49,8 +50,9 @@ const Login = () => {
                     type="password" 
                     placeholder='Password'
                     autoComplete='current-password'
+                    id='password'
                     />
-                    <button className='bg-red-600 py-3 my-6 rounded font-bold'>
+                    <button id='login-btn' className='bg-red-600 py-3 my-6 rounded font-bold'>
                         Entrar
                     </button>
                     <div className='flex justify-between items-center text-sm text-gray-600'>
